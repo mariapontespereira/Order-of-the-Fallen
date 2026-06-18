@@ -834,6 +834,8 @@ export default class FinalVictoryScene extends Phaser.Scene {
         // Marca que está a mudar de cena.
         this.isChangingScene = true;
 
+        this.restaurarMoedasDoInicioDoNivel();
+
         // Secção de guardar modo e heróis.
 
         // Guarda o modo de jogo no registry.
@@ -994,5 +996,17 @@ export default class FinalVictoryScene extends Phaser.Scene {
 
         // Converte os dados para texto JSON e volta a objeto para criar uma cópia independente.
         return JSON.parse(JSON.stringify(data));
+    }
+
+    restaurarMoedasDoInicioDoNivel() {
+        const coinsAtLevelStart = this.registry.get('coinsAtLevelStart') || {
+            p1: 0,
+            p2: 0
+        };
+
+        this.registry.set('coins', {
+            p1: coinsAtLevelStart.p1 || 0,
+            p2: coinsAtLevelStart.p2 || 0
+        });
     }
 }

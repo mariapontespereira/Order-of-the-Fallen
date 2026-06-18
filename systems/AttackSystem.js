@@ -1062,11 +1062,12 @@ export default class AttackSystem {
 
             // flip só para esquerda/direita
 
-            // Vira o FX se estiver a ir para a esquerda.
-            fx.flipX = dirVector.x < 0;
-
+            // Vira o FX
             // Se o FX deve rodar conforme a direção.
             if (fxConfig.rotateWithDirection) {
+
+                // Quando usa rotação, não usa flip.
+                fx.flipX = false;
 
                 // Aplica o ângulo do vetor.
                 fx.setAngle(dirVector.angle);
@@ -1074,6 +1075,9 @@ export default class AttackSystem {
 
                 // Mantém o FX sem rotação.
                 fx.setAngle(0);
+
+                // Vira apenas quando vai para a direita.
+                fx.flipX = dirVector.x > 0;
             }
         }
 

@@ -2258,6 +2258,7 @@ export default class VictoryScene extends Phaser.Scene {
         // Marca que a cena está a mudar.
         this.isChangingScene = true;
 
+        this.restaurarMoedasDoInicioDoNivel();
         // Restaura vida e estados dos jogadores.
         this.restaurarStatusJogadores();
 
@@ -2284,6 +2285,7 @@ export default class VictoryScene extends Phaser.Scene {
         );
     }
 
+    
     // Vai para o próximo nível.
     irProximoNivel() {
 
@@ -2424,5 +2426,17 @@ export default class VictoryScene extends Phaser.Scene {
             // Limpa estado de defesa.
             p2.isBlocking = false;
         }
+    }
+
+    restaurarMoedasDoInicioDoNivel() {
+        const coinsAtLevelStart = this.registry.get('coinsAtLevelStart') || {
+            p1: 0,
+            p2: 0
+        };
+
+        this.registry.set('coins', {
+            p1: coinsAtLevelStart.p1 || 0,
+            p2: coinsAtLevelStart.p2 || 0
+        });
     }
 }
