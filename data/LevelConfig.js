@@ -9,8 +9,8 @@ const LEVEL_CONFIG = {
         // Define qual é o próximo nível depois de terminar o Level1.
         nextLevel: 'Level2',
         // Tempo máximo do nível em segundos.
-        // 180 segundos = 3 minutos.
-        time: 180,
+        // 240 segundos = 4 minutos.
+        time: 240,
 
         // Configuração da tela de introdução do nível.
         intro: {
