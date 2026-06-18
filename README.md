@@ -4,7 +4,7 @@
 
 O jogo conta com modos **Single Player** e **Multiplayer Local (Co-op)** no mesmo teclado.
 
-> ### 🎮 [CLICA AQUI PARA JOGAR ONLINE](https://mariapontespereira.github.io/Order_of_the_Fallen)
+> ### 🎮 [CLICA AQUI PARA JOGAR ONLINE](https://mariapontespereira.github.io/Order-of-the-Fallen/)
 > *(Joga diretamente no teu navegador através do GitHub Pages)*
 
 <br>
