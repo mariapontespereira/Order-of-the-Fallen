@@ -1,0 +1,87 @@
+/* Define uma fonte personalizada para ser usada no jogo. */
+@font-face {
+    /* Nome que vais usar no CSS para chamar esta fonte. */
+    font-family: 'MedievalSharp';
+
+    /* Caminho do ficheiro da fonte dentro do projeto. */
+    src: url('assets/fonts/MedievalSharp-Regular.ttf') format('truetype');
+
+    /* Define que esta fonte tem peso normal. */
+    font-weight: normal;
+
+    /* Define que esta fonte não está em itálico. */
+    font-style: normal;
+
+    /* Permite mostrar uma fonte alternativa enquanto a fonte personalizada carrega. */
+    font-display: swap;
+}
+
+/* Aplica estilos base ao html e ao body da página. */
+html,
+body {
+    /* Remove a margem padrão do navegador. */
+    margin: 0;
+
+    /* Remove o espaçamento interno padrão do navegador. */
+    padding: 0;
+
+    /* Faz o html e o body ocuparem toda a largura da janela. */
+    width: 100%;
+
+    /* Faz o html e o body ocuparem toda a altura da janela. */
+    height: 100%;
+
+    /* Esconde qualquer conteúdo que ultrapasse os limites da janela. */
+    overflow: hidden;
+
+    /* Define o fundo da página como preto. */
+    background: black;
+
+    /* Define a fonte principal como MedievalSharp e usa Arial/sans-serif como alternativa. */
+    font-family: 'MedievalSharp', Arial, sans-serif;
+}
+
+/* Aplica estilos específicos ao body. */
+body {
+    /* Usa flexbox para alinhar o conteúdo da página. */
+    display: flex;
+
+    /* Centra o conteúdo horizontalmente. */
+    justify-content: center;
+
+    /* Centra o conteúdo verticalmente. */
+    align-items: center;
+}
+
+/* Define o estilo do contentor onde o jogo é colocado. */
+#game-container {
+    /* Faz o contentor ocupar toda a largura visível da janela. */
+    width: 100vw;
+
+    /* Faz o contentor ocupar toda a altura visível da janela. */
+    height: 100vh;
+
+    /* Usa flexbox para alinhar o canvas do jogo. */
+    display: flex;
+
+    /* Centra o canvas horizontalmente dentro do contentor. */
+    justify-content: center;
+
+    /* Centra o canvas verticalmente dentro do contentor. */
+    align-items: center;
+
+    /* Esconde qualquer parte que ultrapasse o contentor. */
+    overflow: hidden;
+}
+
+/* Aplica estilos ao canvas criado pelo Phaser. */
+canvas {
+    /* Remove comportamento inline padrão do canvas. */
+    display: block;
+
+    /* Centra o canvas automaticamente. */
+    margin: auto;
+
+    /* Mantém o aspeto pixelado das imagens, ideal para pixel art. */
+    image-rendering: pixelated;
+}
