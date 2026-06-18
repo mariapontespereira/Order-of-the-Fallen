@@ -1,13 +1,13 @@
 # ⚔️ Order of the Fallen
 
-**Order of the Fallen** é um jogo de RPG de ação com perspetiva **2D Top-Down**, desenvolvido em JavaScript com a framework **Phaser 3**. O jogador explora mapas, enfrenta inimigos, recolhe itens estratégicos e avança por níveis desafiantes até ao confronto final.
+**Order of the Fallen** é um jogo de RPG de ação com perspetiva **2D Top-Down**, desenvolvido em JavaScript com a framework **Phaser 3**. O jogador explora mapas, enfrenta inimigos, recolhe itens e avança por níveis desafiantes até ao confronto final.
 
 O jogo conta com modos **Single Player** e **Multiplayer Local (Co-op)** no mesmo teclado.
 
 > ### 🎮 [CLICA AQUI PARA JOGAR ONLINE](https://mariapontespereira.github.io/Order_of_the_Fallen)
 > *(Joga diretamente no teu navegador através do GitHub Pages)*
 
----
+
 
 ## 📜 Universo e Enredo
 
@@ -15,7 +15,7 @@ O enredo desenrola-se em Valdoria, um reino que viveu em paz durante séculos gr
 Para enfrentar este desafio, o jogador escolhe um herói e percorre  níveis cheios de inimigos, obstáculos e caminhos bloqueados. Durante a aventura, é necessário explorar o mapa, recolher cristais, usar itens e encontrar chaves para conseguir avançar.
 O objetivo principal é chegar até Odysseus e derrotá-lo, restaurando a segurança de Valdoria.
 
----
+
 
 ## ⚙️ Funcionalidades
 
@@ -24,13 +24,13 @@ O objetivo principal é chegar até Odysseus e derrotá-lo, restaurando a segura
 * ⚔️ Combate Completo: Ataques normais, habilidades com recarga, ataques especiais e defesa ativa.  
 * 🗺️ Mundo Interativo: Mapas criados no Tiled com zonas de perigo, baús de tesouro e portas trancadas por chaves. 
 
----
+
 
 ## 🎮 Controlos
 
 ### Jogador 1
 
-* Mover: Setas Direcionais (`↑` `↓` `←` `→`)
+* Mover: Setas Direcionais `↑` `↓` `←` `→`
 * Ataque Normal: `J`
 * Ataque 2: `K`
 * Ataque 3: `L`
@@ -46,7 +46,7 @@ O objetivo principal é chegar até Odysseus e derrotá-lo, restaurando a segura
 * Defender: `CTRL`
 * Interagir: `E`
 
----
+
 
 ##  💻 Como Correr o Jogo Localmente
 O Phaser necessita de um servidor local para carregar os ficheiros de imagem, som e mapas (restrições de segurança de CORS dos navegadores modernos).
@@ -63,7 +63,7 @@ O Phaser necessita de um servidor local para carregar os ficheiros de imagem, so
 
 5. O jogo abrirá automaticamente no teu navegador padrão.
 
----
+
 
 ## 📝 Reflexão Académica 
 O desenvolvimento de Order of the Fallen foi um grande desafio técnico, especialmente devido ao prazo curto para planear, programar e polir o jogo.
@@ -80,7 +80,7 @@ O desenvolvimento de Order of the Fallen foi um grande desafio técnico, especia
 
   * *Pouco Tempo:* Gerir o curto prazo de entrega, o que obrigou a focar nas mecânicas principais e a resolver problemas de forma rápida e prática.
 
----
+
 
 ## 🎨 Créditos e Recursos (Assets)
 
